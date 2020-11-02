@@ -20,7 +20,7 @@ namespace Commander.Controllers
         [HttpGet]
         public IActionResult GetAllCommands()
         {
-            var commandsItems = _repository.GetAppCommands();
+            var commandsItems = _repository.GetAllCommands();
             
             return Ok(commandsItems);
         }
